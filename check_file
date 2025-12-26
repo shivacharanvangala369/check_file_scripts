@@ -1,0 +1,18 @@
+
+if [ -e /var/clump ]; then
+  echo "file exist"
+fi
+
+
+if [ -d /home/f1 ]; then
+  echo "dir exist"
+fi
+
+
+if [ -d /home/f1 ] && [ -d /home/f2 ] && [ -e /var/clump ]; then
+  echo "dirs exist"
+fi
+
+if [ -d /home/f1 ] && [ -d /home/f2 ] && [ -e /var/clump ] && [ -s /home/check_file ]; then
+  echo "dirs and file is not empy exist"
+fi
