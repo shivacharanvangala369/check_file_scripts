@@ -1,0 +1,14 @@
+for i in {1..6}; do 
+  echo "itiration $i"
+done
+
+
+
+j=1
+
+for i in {1..6}; do
+  a="$((i*j))"
+  echo "$a"
+  ((j++))
+  
+done
